@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed font-light">
-          Front-end developer specializing in building digital experiences with
+          Full Stack Developer specializing in building digital experiences with
           precision and attention to detail.
         </p>
 
