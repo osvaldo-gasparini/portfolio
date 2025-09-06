@@ -243,7 +243,7 @@ const SaturnThreeJS: React.FC = () => {
     }, []);
 
     return (
-        <div ref={mountRef} className="fixed inset-0 pointer-events-none z-0" />
+        <div ref={mountRef} className="w-[100dvw] h-[100dvh] fixed inset-0 pointer-events-none z-0" />
     );
 };
 
