@@ -5,33 +5,19 @@ const About: React.FC = () => {
     return (
         <section id="about" className="py-20 px-6">
             <div className="max-w-6xl mx-auto">
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-                        About Me
-                    </h2>
-                    <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light">
-                        Developer focused on creating effective digital
-                        solutions
-                    </p>
-                </div>
-
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
                         <p className="text-lg text-gray-300 leading-relaxed">
-                            Hi, I'm{" "}
-                            <span className="text-white font-medium">
-                                Osva
-                            </span>
-                            , <br />I solve problems through code.
+                            Hey there, I'm{" "}
+                            <span className="text-white font-medium">Osva</span>
+                            <br />I solve problems through code.
                         </p>
 
                         <p className="text-lg text-gray-300 leading-relaxed">
-                            I work with modern technologies like React,
-                            TypeScript, Node.js, and cloud platforms, and I
-                            approach each project as an opportunity to solve
-                            problems with clarity and impact. For me, quality is
-                            not just about how the code runs, but how the
-                            product makes people feel when they use it.
+                            From intuitive interfaces to scalable backends and
+                            cloud infrastructure, I approach every project as an
+                            opportunity to deliver clarity, impact, and products
+                            that people actually enjoy using.
                         </p>
                     </div>
 
@@ -42,13 +28,13 @@ const About: React.FC = () => {
                                     <Code className="text-gray-300" size={24} />
                                 </div>
                                 <h3 className="text-xl font-semibold text-white">
-                                    Development Frontend
+                                    Full-Stack Development
                                 </h3>
                             </div>
                             <p className="text-gray-400">
-                                Specializing in React, TypeScript, and modern
-                                technologies to create robust and scalable
-                                interfaces.
+                                Building products end-to-end, from intuitive
+                                frontends to scalable backends and cloud
+                                infrastructure.
                             </p>
                         </div>
 

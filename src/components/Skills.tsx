@@ -13,38 +13,41 @@ const Skills: React.FC = () => {
         {
             title: "Frontend Development",
             icon: <Code className="text-gray-400" size={24} />,
-            skills: [
-                "React",
-                "TypeScript",
-                "Next.js",
-                "Tailwind CSS",
-                "Vue.js",
-            ],
+            skills: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
         },
         {
             title: "UI/UX Design",
             icon: <Palette className="text-gray-400" size={24} />,
-            skills: [
-                "Figma",
-                "Adobe XD",
-                "Responsive Design",
-                "Design Systems",
-            ],
+            skills: ["Design Systems", "Responsive Design", "Figma"],
         },
         {
             title: "Backend Development",
             icon: <Server className="text-gray-400" size={24} />,
-            skills: ["Node.js", "Express", "Python", "RESTful APIs", "GraphQL"],
+            skills: [
+                "Node.js",
+                "Express",
+                "NestJs",
+                "Python",
+                "RESTful APIs",
+                "GraphQL",
+            ],
         },
         {
             title: "Mobile Development",
             icon: <Smartphone className="text-gray-400" size={24} />,
-            skills: ["React Native", "Flutter", "Progressive Web Apps"],
+            skills: ["React Native", "Progressive Web Apps"],
         },
         {
             title: "Database Management",
             icon: <Database className="text-gray-400" size={24} />,
-            skills: ["PostgreSQL", "MongoDB", "Supabase", "Redis"],
+            skills: [
+                "PostgreSQL",
+                "MongoDB",
+                "Prisma",
+                "TypeORM",
+                "Firebase",
+                "Supabase",
+            ],
         },
         {
             title: "DevOps & Tools",

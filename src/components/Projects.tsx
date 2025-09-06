@@ -18,11 +18,11 @@ const Projects: React.FC = () => {
                 "Prisma",
             ],
             image: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800",
-            featured: true,
+            featured: false,
         },
         {
             id: 2,
-            title: "Gym Web Page & Leads Generator",
+            title: "Gym Landing & Leads Generator",
             description: `A responsive, high-design landing page for a gym offering both in-person training and full online coaching services. Focused on conversion optimization, UX/UI excellence, and seamless mobile experience. Built with modern frontend technologies and clean, maintainable code.`,
             technologies: ["Next.js", "Tailwind CSS", "Supabase"],
             image: "movement-academy-hero.png",
@@ -37,21 +37,22 @@ const Projects: React.FC = () => {
                 "A portfolio project that proudly features... itself. Built with React and TailwindCSS, enhanced by a dynamic Three.js rendering of Saturn spinning quietly in the background. A subtle nod to recursion — yes, this portfolio describes the portfolio you're currently viewing. Clean, fast, and just a bit self-aware.",
             technologies: ["React", "Tailwind CSS", "Three.js", "Vite"],
             image: "saturn-portfolio.png",
-            demoUrl: "https://movement-academy.vercel.app/",
+            //TODO: agregar el link de ir hacia la web, pero mostrar un mensaje que diga "acaso queres crear un bucle en el tiempo y espacio?!?!"
             githubUrl: "https://github.com/osvaldo-gasparini/portfolio",
-            featured: true,
-        },
-        /* {
-            id: 3,
-            title: "Mantenimiento y Construcciones",
-            description: "L",
-            technologies: ["React", "Express", "MongoDB", "GraphQL"],
-            image: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800",
-            demoUrl: "#",
-            githubUrl: "#",
             featured: false,
         },
         {
+            id: 3,
+            title: "HomeFix Landing Page",
+            description:
+                "Developed a clean and responsive landing page for a local home maintenance and repair service. Focused on trust-building, professional design, and seamless user experience to help the client showcase their services and generate leads efficiently. Handled end-to-end development from design implementation to performance optimization.",
+            technologies: ["Astro", "React", "Tailwind CSS"],
+            image: "roma-landing.png",
+            demoUrl: "https://roma-landing-page.vercel.app/",
+            githubUrl: "https://github.com/osvaldo-gasparini/roma-landing-page",
+            featured: true,
+        },
+        /* {
             id: 4,
             title: "Poke API",
             description:
@@ -167,24 +168,32 @@ const Projects: React.FC = () => {
                                         {project.title}
                                     </h3>
                                     <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        <a
-                                            href={project.githubUrl}
-                                            className="p-1 hover:bg-white/10 rounded transition-colors"
-                                        >
-                                            <Github
-                                                size={14}
-                                                className="text-gray-400 hover:text-white"
-                                            />
-                                        </a>
-                                        <a
-                                            href={project.demoUrl}
-                                            className="p-1 hover:bg-white/10 rounded transition-colors"
-                                        >
-                                            <ArrowUpRight
-                                                size={14}
-                                                className="text-gray-400 hover:text-white"
-                                            />
-                                        </a>
+                                        {project.githubUrl ? (
+                                            <a
+                                                href={project.githubUrl}
+                                                className="p-1 hover:bg-white/10 rounded transition-colors"
+                                            >
+                                                <Github
+                                                    size={14}
+                                                    className="text-gray-400 hover:text-white"
+                                                />
+                                            </a>
+                                        ) : (
+                                            <></>
+                                        )}
+                                        {project.demoUrl ? (
+                                            <a
+                                                href={project.demoUrl}
+                                                className="p-1 hover:bg-white/10 rounded transition-colors"
+                                            >
+                                                <ArrowUpRight
+                                                    size={14}
+                                                    className="text-gray-400 hover:text-white"
+                                                />
+                                            </a>
+                                        ) : (
+                                            <></>
+                                        )}
                                     </div>
                                 </div>
 
