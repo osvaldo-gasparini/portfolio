@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
     };
 
     return (
-        <section className="min-h-screen flex items-center justify-center lg:justify-start relative">
+        <section className="min-h-screen flex items-center justify-center lg:justify-start relative w-full">
             <div className="text-center z-10 max-w-4xl mx-auto lg:mx-0 px-6 lg:flex lg:flex-col lg:justify-start lg:pl-40">
                 <div className="mb-8 inline-flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full text-gray-400 text-sm font-medium w-min text-nowrap">
                     Full Stack Developer
@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
             {/* Scroll indicator */}
             <button
                 onClick={scrollToNext}
-                className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-500 hover:text-gray-300 transition-colors animate-bounce"
+                className="absolute bottom-8 inset-x-0 mx-auto text-gray-500 hover:text-gray-300 transition-colors animate-bounce w-max"
             >
                 <ChevronDown size={32} />
             </button>
