@@ -23,12 +23,22 @@ const Projects: React.FC = () => {
         {
             id: 2,
             title: "Gym Web Page & Leads Generator",
-            description:
-                "A responsive, high-design landing page for a gym offering both in-person training and full online coaching services. Focused on conversion optimization, UX/UI excellence, and seamless mobile experience. Built with modern frontend technologies and clean, maintainable code.",
+            description: `A responsive, high-design landing page for a gym offering both in-person training and full online coaching services. Focused on conversion optimization, UX/UI excellence, and seamless mobile experience. Built with modern frontend technologies and clean, maintainable code.`,
             technologies: ["Next.js", "Tailwind CSS", "Supabase"],
             image: "movement-academy-hero.png",
             demoUrl: "https://movement-academy.vercel.app/",
-            githubUrl: "#",
+            githubUrl: "https://github.com/osvaldo-gasparini/movement-academy",
+            featured: true,
+        },
+        {
+            id: 2,
+            title: "This web :)",
+            description:
+                "A portfolio project that proudly features... itself. Built with React and TailwindCSS, enhanced by a dynamic Three.js rendering of Saturn spinning quietly in the background. A subtle nod to recursion — yes, this portfolio describes the portfolio you're currently viewing. Clean, fast, and just a bit self-aware.",
+            technologies: ["React", "Tailwind CSS", "Three.js", "Vite"],
+            image: "saturn-portfolio.png",
+            demoUrl: "https://movement-academy.vercel.app/",
+            githubUrl: "https://github.com/osvaldo-gasparini/portfolio",
             featured: true,
         },
         /* {
